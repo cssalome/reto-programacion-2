@@ -3,12 +3,15 @@
 // en caso contrario informar el producto y
 // la división del primero respecto al segundo.
 
-const num1 = Number(prompt("Imgrese un numero", ""));
-const num2 = Number(prompt("Imgrese otro numero", ""));
-const suma = num1 + num2;
-const diferencia = num1 - num2;
+const num1 = Number(prompt("Ingrese un numero", ""));
+const num2 = Number(
+  prompt("Ingrese un numero menor al anterior ingresado", "")
+);
 
 if (num1 > num2) {
-  alert(`Su suma es:${suma}. Y su diferrencia es de: ${diferencia}`);
+  alert(`La suma de ambos numeros: ${num1 + num2}. 
+  La diferencia entre ambos numeros: ${num1 - num2}`);
 } else {
+  alert(`El producto de ambos: ${num2 * num1} 
+ La division del primero respecto al segundo: ${num2 / num1}`);
 }
